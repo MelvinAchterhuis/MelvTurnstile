@@ -1,0 +1,7 @@
+{
+    "captcha": {
+        "cloudFlareTurnstile": {
+            "dataProtectionInformation": "This site is protected by Turnstile and the CloudFlare <a href=\"https://www.cloudflare.com/en-gb/privacypolicy/\">Privacy Policy</a> and <a href=\"https://www.cloudflare.com/en-gb/website-terms/\">Terms of Service</a> apply."
+        }
+    }
+}

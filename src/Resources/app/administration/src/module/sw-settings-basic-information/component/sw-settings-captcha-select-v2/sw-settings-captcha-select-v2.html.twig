@@ -1,0 +1,36 @@
+<!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+{% block sw_settings_captcha_select_v2_google_recaptcha_v2 %}
+    {% parent() %}
+    {% block sw_settings_captcha_select_v2_cloudflare_turnstile %}
+        <sw-container
+                v-if="currentValue.cloudFlareTurnstile.isActive"
+                class="sw-settings-captcha-select-v2__cloudflare-turnstile"
+        >
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_description %}
+                <p class="sw-settings-captcha-select-v2__description sw-settings-captcha-select-v2__cloudflare-turnstile-description">
+                    {{ $tc('sw-settings-basic-information.captcha.label.cloudFlareTurnstileDescription') }}
+                </p>
+            {% endblock %}
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_site_key %}
+                <sw-text-field
+                        v-model="currentValue.cloudFlareTurnstile.config.siteKey"
+                        name="cloudFlareTurnstileSiteKey"
+                        :label="$tc('sw-settings-basic-information.captcha.label.cloudFlareTurnstileSiteKey')"
+                />
+            {% endblock %}
+
+            <!-- eslint-disable-next-line sw-deprecation-rules/no-twigjs-blocks -->
+            {% block sw_settings_captcha_select_v2_cloudflare_turnstile_secret_key %}
+                <sw-text-field
+                        v-model="currentValue.cloudFlareTurnstile.config.secretKey"
+                        name="cloudFlareTurnstileSecretKey"
+                        :label="$tc('sw-settings-basic-information.captcha.label.cloudFlareTurnstileSecretKey')"
+                />
+            {% endblock %}
+        </sw-container>
+    {% endblock %}
+{% endblock %}

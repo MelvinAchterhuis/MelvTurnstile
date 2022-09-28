@@ -1,0 +1,12 @@
+{
+    "sw-settings-basic-information": {
+        "captcha": {
+            "label": {
+                "cloudFlareTurnstile": "CloudFlare Turnstile",
+                "cloudFlareTurnstileSiteKey": "CloudFlare Turnstile site key",
+                "cloudFlareTurnstileSecretKey": "CloudFlare Turnstile secret key",
+                "cloudFlareTurnstileDescription": "Turnstile is CloudFlare's CAPTCHA alternative. It automatically chooses from a rotating suite of non-intrusive browser challenges based on telemetry and client behavior exhibited during a session."
+            }
+        }
+    }
+}

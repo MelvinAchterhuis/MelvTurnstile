@@ -1,0 +1,11 @@
+{% sw_extends '@Storefront/storefront/component/recaptcha.html.twig' %}
+
+{% block component_head_javascript_recaptcha %}
+    {{ parent() }}
+    {% block component_head_javascript_turnstile %}
+        {% set turnstileActive = config('core.basicInformation.activeCaptchasV2.cloudFlareTurnstile.isActive') %}
+        {% if turnstileActive %}
+            <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+        {% endif %}
+    {% endblock %}
+{% endblock %}

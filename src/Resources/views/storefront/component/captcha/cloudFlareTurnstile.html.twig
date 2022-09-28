@@ -1,0 +1,9 @@
+{% block component_captcha_cloudflare_turnstile %}
+    <div class="cf-turnstile mb-2"
+         data-sitekey="{{ config('core.basicInformation.activeCaptchasV2.cloudFlareTurnstile.config.siteKey') }}">
+
+        <div class="data-protection-information cf_turnstile-protection-information mb-2">
+            {{ "captcha.cloudFlareTurnstile.dataProtectionInformation"|trans|sw_sanitize }}
+        </div>
+    </div>
+{% endblock %}
