@@ -4,8 +4,11 @@
 
 Create a free account to claim your keys: https://www.cloudflare.com/en-gb/lp/turnstile/
 
-*Config:* 
+**Config:** 
 ![](https://i.imgur.com/qutsRPd.png)
+
+**Front-end:**
+![](https://i.imgur.com/0qr655N.png)
 
 Known issues:
 * Not working when form in modal
