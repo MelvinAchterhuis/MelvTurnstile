@@ -10,6 +10,7 @@ Create a free account to claim your keys: https://www.cloudflare.com/en-gb/lp/tu
 Known issues:
 * Not working when form in modal
 * No alert when captcha invalid
+* Current captcha settings are overridden when installing plugin
 * Missing translations for German
 * ..
 
